@@ -36,7 +36,7 @@
 
   // Scroll reveal
   var revealEls = document.querySelectorAll(
-    ".about-grid, .service-block, .method .eyebrow, .method-intro, .spectrum, .proof-grid, .contact-grid"
+    ".about-grid, .service-block, .method .eyebrow, .method-intro, .spectrum, .method-approach, .proof-grid, .contact-grid"
   );
   revealEls.forEach(function (el) { el.classList.add("reveal"); });
 

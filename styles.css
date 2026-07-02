@@ -608,44 +608,55 @@ p:last-child { margin-bottom: 0; }
   color: var(--ink-soft);
 }
 
-.method-outro {
+.method-approach {
+  margin-top: 64px;
+  padding-top: 56px;
+  border-top: 1px solid var(--stone);
+}
+.method-approach-title {
+  font-size: clamp(24px, 3vw, 32px);
+  line-height: 1.2;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 20px;
+}
+.method-approach-intro {
   color: var(--ink-soft);
   font-size: 16px;
-  max-width: 60ch;
-  margin-bottom: 32px;
+  max-width: 62ch;
+  margin-bottom: 44px;
 }
 
-.process-chain {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  align-items: center;
+.approach-steps { display: flex; flex-direction: column; }
+.approach-step {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 40px;
+  padding: 28px 0;
+  border-top: 1px solid var(--stone-soft);
 }
-.process-chain li {
-  font-family: var(--font-mono);
-  font-size: 13px;
-  color: var(--ink-soft);
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-.process-chain li span {
+.approach-step:first-child { padding-top: 0; border-top: none; }
+.approach-step-label {
   font-family: var(--font-display);
   font-style: italic;
-  font-size: 17px;
-  color: var(--navy);
-  margin-right: 2px;
-}
-.process-chain li:not(:last-child)::after {
-  content: "→";
+  font-weight: 500;
+  font-size: 28px;
   color: var(--gold-deep);
-  margin-left: 12px;
+}
+.approach-step p {
+  color: var(--ink-soft);
+  font-size: 15.5px;
+  line-height: 1.65;
 }
 
 @media (max-width: 640px) {
   .spectrum-poles { flex-direction: column; gap: 18px; }
   .spectrum-pole-right { text-align: left; align-items: flex-start; }
   .spectrum-marker-label { white-space: normal; width: 120px; }
+}
+
+@media (max-width: 720px) {
+  .approach-step { grid-template-columns: 1fr; gap: 10px; }
 }
 
 /* ============================================================
