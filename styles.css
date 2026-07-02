@@ -716,6 +716,7 @@ p:last-child { margin-bottom: 0; }
 .contact {
   padding: var(--section-pad) 0;
   background: var(--paper);
+  border-top: 1px solid var(--stone);
 }
 .contact-grid {
   display: grid;
